@@ -40,22 +40,46 @@ function initNavbar() {
 function initMobileNav() {
     const toggle = document.getElementById('navToggle');
     const menu = document.getElementById('navMenu');
+    const panel = menu ? menu.querySelector('.nav-menu-panel') : null;
 
-    if (!toggle || !menu) return;
+    if (!toggle || !menu || !panel) return;
+
+    const setMenuState = (isOpen) => {
+        toggle.classList.toggle('active', isOpen);
+        menu.classList.toggle('active', isOpen);
+        menu.setAttribute('aria-hidden', String(!isOpen));
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+        document.body.classList.toggle('menu-open', isOpen);
+    };
 
     toggle.addEventListener('click', () => {
-        toggle.classList.toggle('active');
-        menu.classList.toggle('active');
-        document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+        setMenuState(!menu.classList.contains('active'));
     });
 
     // Close menu when a link is clicked
     menu.querySelectorAll('.nav-link, .nav-btn').forEach(link => {
         link.addEventListener('click', () => {
-            toggle.classList.remove('active');
-            menu.classList.remove('active');
-            document.body.style.overflow = '';
+            setMenuState(false);
         });
+    });
+
+    menu.addEventListener('click', (event) => {
+        if (!panel.contains(event.target)) {
+            setMenuState(false);
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && menu.classList.contains('active')) {
+            setMenuState(false);
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && menu.classList.contains('active')) {
+            setMenuState(false);
+        }
     });
 }
 
