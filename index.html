@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPG Clinic and Physiotherapy | Dr. Satjeet Kumar — Professional Physiotherapy in Ranchi</title>
+    <meta name="description"
+        content="JPG Clinic and Physiotherapy offers expert physiotherapy care by Dr. Satjeet Kumar in Ranchi. Specializing in pain relief, injury recovery, and improved mobility through personalized treatment plans.">
+    <meta name="keywords"
+        content="physiotherapy, physiotherapist Ranchi, Dr. Satjeet Kumar, pain relief, injury recovery, JPG Clinic, rehabilitation">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg ">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-brand">
+                <div style="display: flex; justify-content: center; align-items: center;">
+  <div class="brand-icon" style="height: 70px; width: 70px;">
+    <img src="images/logo.svg" alt="JPG Clinic Logo" width="70" height="70">
+  </div>
+</div>
+                <div class="brand-text">
+                    <span class="brand-name">JPG Clinic and Physiotherapy</span>
+                    <span class="brand-tagline">Dr. Satjeet Kumar</span>
+                </div>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#services" class="nav-link" data-section="services">Services</a>
+                <a href="#why-us" class="nav-link" data-section="why-us">Why Us</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                <a href="#contact" class="nav-btn">Book Appointment</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero-bg.png" alt="JPG Clinic and Physiotherapy" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-badge animate-on-scroll">
+                    <span class="badge-dot"></span>
+                    Trusted Physiotherapy Care in Ranchi
+                </span>
+                <h1 class="hero-title animate-on-scroll">
+                    Professional Physiotherapy Care for a
+                    <span class="highlight">Healthy</span> and
+                    <span class="highlight">Pain-Free</span> Life
+                </h1>
+                <p class="hero-subtitle animate-on-scroll">
+                    Expert treatment for pain relief, injury recovery, and improved mobility —
+                    by Dr. Satjeet Kumar at JPG Clinic and Physiotherapy.
+                </p>
+                <div class="hero-actions animate-on-scroll">
+                    <a href="#contact" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                        Book Appointment
+                    </a>
+                    <a href="#services" class="btn btn-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                        View Services
+                    </a>
+                </div>
+                <div class="hero-trust animate-on-scroll">
+                    <div class="trust-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <span>Experienced Physiotherapist</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <span>Personalized Treatment Plans</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <span>Modern Techniques</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,60 L1440,120 L0,120 Z" fill="white" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ==================== INTRO SECTION ==================== -->
+    <section class="intro" id="intro">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-card animate-on-scroll">
+                    <div class="intro-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 4C13 4 4 13 4 24s9 20 20 20 20-9 20-20S35 4 24 4z" />
+                            <path d="M24 14v10l7 7" />
+                        </svg>
+                    </div>
+                    <h3>Quick Recovery</h3>
+                    <p>Evidence-based treatments designed for faster healing and long-term results.</p>
+                </div>
+                <div class="intro-card animate-on-scroll">
+                    <div class="intro-icon icon-green">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 4l5.5 11.2L42 17l-9 8.8L35 38l-11-5.8L13 38l2-12.2-9-8.8 12.5-1.8z" />
+                        </svg>
+                    </div>
+                    <h3>Expert Care</h3>
+                    <p>Dr. Satjeet Kumar brings years of clinical expertise and compassionate care.</p>
+                </div>
+                <div class="intro-card animate-on-scroll">
+                    <div class="intro-icon icon-purple">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 44s16-10 16-24c0-8.8-7.2-16-16-16S8 11.2 8 20c0 14 16 24 16 24z" />
+                            <circle cx="24" cy="20" r="6" />
+                        </svg>
+                    </div>
+                    <h3>Convenient Location</h3>
+                    <p>Easily accessible clinic at Ajit Chowk, Ranchi with modern facilities.</p>
+                </div>
+                <div class="intro-card animate-on-scroll">
+                    <div class="intro-icon icon-warm">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M36 16c0-6.6-5.4-12-12-12S12 9.4 12 16c0 4.4 2.4 8.3 6 10.4V36h12V26.4c3.6-2.1 6-6 6-10.4z" />
+                            <line x1="18" y1="42" x2="30" y2="42" />
+                            <line x1="20" y1="38" x2="28" y2="38" />
+                        </svg>
+                    </div>
+                    <h3>Personalized Plans</h3>
+                    <p>Customized therapy programs tailored to your unique needs and goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-label animate-on-scroll">
+                <span class="label-line"></span>
+                <span>About the Doctor</span>
+                <span class="label-line"></span>
+            </div>
+            <div class="about-centered animate-on-scroll">
+                <div class="about-experience-badge">
+                    <span class="badge-years">15+</span>
+                    <span class="badge-text">Years of Experience</span>
+                </div>
+                <h2 class="section-title">Meet <span class="highlight">Dr. Satjeet Kumar</span></h2>
+                <p class="about-subtitle">Professional Physiotherapist at JPG Clinic and Physiotherapy</p>
+                <p class="about-text">
+                    Dr. Satjeet Kumar is a professional and dedicated physiotherapist experienced in treating pain,
+                    injuries, and movement problems. With a deep passion for restoring health and improving quality
+                    of life, he provides patient-centered care with customized therapy plans tailored to individual
+                    needs.
+                </p>
+                <p class="about-text">
+                    His approach focuses on improving mobility, flexibility, strength, posture, and overall physical
+                    health using modern physiotherapy methods and evidence-based techniques. Every treatment plan is
+                    designed to provide lasting relief and long-term recovery.
+                </p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <span>Improved mobility & flexibility</span>
+                    </div>
+                    <div class="about-feature">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <span>Strength & posture correction</span>
+                    </div>
+                    <div class="about-feature">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <span>Modern evidence-based methods</span>
+                    </div>
+                    <div class="about-feature">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        <span>Patient-centered care approach</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    Book a Consultation
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section class="services" id="services">
+        <div class="services-bg"></div>
+        <div class="container">
+            <div class="section-label animate-on-scroll">
+                <span class="label-line"></span>
+                <span>Our Services</span>
+                <span class="label-line"></span>
+            </div>
+            <h2 class="section-title text-center animate-on-scroll">Comprehensive <span
+                    class="highlight">Physiotherapy</span> Services</h2>
+            <p class="section-desc text-center animate-on-scroll">
+                We offer a wide range of specialized physiotherapy treatments to help you recover,
+                heal, and live a pain-free life.
+            </p>
+
+            <div class="services-grid">
+
+                <div class="service-card animate-on-scroll" data-category="water" data-service="aquatic">
+                    <div class="service-card-bg" style="--card-hue: 190;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 28c4-4 8 0 12-4s8 0 12-4 8 0 12-4" />
+                            <path d="M4 36c4-4 8 0 12-4s8 0 12-4 8 0 12-4" />
+                            <circle cx="24" cy="14" r="4" />
+                            <path d="M24 18v4" />
+                            <path d="M20 22h8" />
+                        </svg>
+                    </div>
+                    <h3>Aquatic Physiotherapy</h3>
+                    <p>Gentle water-based therapy that uses buoyancy to reduce joint stress, improve mobility, and
+                        support rehabilitation in a safe, low-impact environment.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="joint" data-service="arthritis">
+                    <div class="service-card-bg" style="--card-hue: 160;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="10" r="6" />
+                            <path d="M18 18v12l-4 14" />
+                            <path d="M30 18v12l4 14" />
+                            <path d="M20 24h8" />
+                        </svg>
+                    </div>
+                    <h3>Arthritis Treatment</h3>
+                    <p>Specialized techniques to reduce joint inflammation, manage chronic pain, improve flexibility,
+                        and maintain mobility for arthritis patients.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="spine" data-service="backpain">
+                    <div class="service-card-bg" style="--card-hue: 200;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 6v36" />
+                            <path d="M18 10h12" />
+                            <path d="M16 18h16" />
+                            <path d="M18 26h12" />
+                            <path d="M16 34h16" />
+                            <circle cx="24" cy="6" r="2" />
+                            <circle cx="24" cy="42" r="2" />
+                        </svg>
+                    </div>
+                    <h3>Back Pain Treatment</h3>
+                    <p>Targeted therapy to relieve back pain through therapeutic exercises, manual techniques, and
+                        posture correction for lasting relief and prevention.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="exercise" data-service="balance">
+                    <div class="service-card-bg" style="--card-hue: 150;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="12" r="4" />
+                            <path d="M24 16v10" />
+                            <path d="M16 22l8 4 8-4" />
+                            <path d="M20 26l-4 16" />
+                            <path d="M28 26l4 16" />
+                            <line x1="16" y1="42" x2="32" y2="42" />
+                        </svg>
+                    </div>
+                    <h3>Balance Exercise Therapy</h3>
+                    <p>Customized balance training programs to improve stability, prevent falls, and restore confidence
+                        in movement and daily activities.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="joint" data-service="footankle">
+                    <div class="service-card-bg" style="--card-hue: 170;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8l-4 14h8l-6 18" />
+                            <path d="M32 8l4 14h-8l6 18" />
+                            <path d="M20 22h8" />
+                            <ellipse cx="24" cy="40" rx="8" ry="4" />
+                        </svg>
+                    </div>
+                    <h3>Foot and Ankle Pain Treatment</h3>
+                    <p>Expert care for foot and ankle injuries, plantar fasciitis, sprains, and chronic pain using
+                        targeted exercises and manual therapy techniques.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="gentle" data-service="geriatric">
+                    <div class="service-card-bg" style="--card-hue: 140;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="10" r="6" />
+                            <path d="M14 44c0-5.5 4.5-10 10-10s10 4.5 10 10" />
+                            <path d="M18 28l-4-6" />
+                            <path d="M30 28l4-6" />
+                            <path d="M10 20h4" />
+                            <path d="M34 20h4" />
+                        </svg>
+                    </div>
+                    <h3>Geriatric Physiotherapy</h3>
+                    <p>Gentle, age-appropriate physiotherapy to improve mobility, strength, and quality of life for
+                        elderly patients with compassionate, attentive care.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="rehab" data-service="heart">
+                    <div class="service-card-bg" style="--card-hue: 340;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 8c-4 0-8 3-8 8 0 8 8 16 8 16s8-8 8-16c0-5-4-8-8-8z" />
+                            <path d="M8 28c2-2 4-2 6 0s4 2 6 0 4-2 6 0 4 2 6 0 4-2 6 0" />
+                            <path d="M12 36h24" />
+                            <path d="M16 42h16" />
+                        </svg>
+                    </div>
+                    <h3>Heart Therapy Rehabilitation</h3>
+                    <p>Structured cardiac rehabilitation programs to strengthen the heart, improve endurance, and
+                        support recovery after heart-related conditions.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="joint" data-service="hip">
+                    <div class="service-card-bg" style="--card-hue: 180;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 8v14" />
+                            <path d="M28 26v14" />
+                            <circle cx="20" cy="22" r="5" />
+                            <circle cx="28" cy="26" r="5" />
+                            <path d="M14 8h12" />
+                            <path d="M22 40h12" />
+                        </svg>
+                    </div>
+                    <h3>Hip Pain Treatment</h3>
+                    <p>Comprehensive hip pain management combining manual therapy, strengthening exercises, and mobility
+                        work for improved hip function and comfort.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="water" data-service="hydro">
+                    <div class="service-card-bg" style="--card-hue: 195;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 4c-4 8-12 12-12 20a12 12 0 0 0 24 0C36 16 28 12 24 4z" />
+                            <path d="M18 30c2-2 4-2 6 0s4 2 6 0" />
+                            <path d="M16 36c2-2 4-2 6 0s4 2 6 0 4-2 6 0" />
+                        </svg>
+                    </div>
+                    <h3>Hydrotherapy Training</h3>
+                    <p>Therapeutic water exercises using warm water to relax muscles, reduce pain, improve blood
+                        circulation, and accelerate natural healing.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="joint" data-service="knee">
+                    <div class="service-card-bg" style="--card-hue: 175;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 6v14" />
+                            <path d="M26 28v14" />
+                            <circle cx="24" cy="22" r="6" />
+                            <path d="M18 22c0-3 2.7-6 6-6" />
+                            <path d="M30 22c0 3-2.7 6-6 6" />
+                            <path d="M16 6h12" />
+                            <path d="M20 42h12" />
+                        </svg>
+                    </div>
+                    <h3>Knee Pain Treatment</h3>
+                    <p>Effective knee rehabilitation through targeted exercises, manual therapy, and progressive
+                        strengthening programs for pain-free movement.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="spine" data-service="neurospine">
+                    <div class="service-card-bg" style="--card-hue: 220;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 4v8" />
+                            <circle cx="24" cy="16" r="4" />
+                            <path d="M24 20v4" />
+                            <circle cx="24" cy="28" r="4" />
+                            <path d="M24 32v4" />
+                            <circle cx="24" cy="40" r="4" />
+                            <path d="M12 16h8" />
+                            <path d="M28 16h8" />
+                            <path d="M10 28h10" />
+                            <path d="M28 28h10" />
+                        </svg>
+                    </div>
+                    <h3>Neurological Spine Physiotherapy</h3>
+                    <p>Specialized treatment for neurological spine conditions to improve nerve function, reduce pain,
+                        and restore healthy movement patterns.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="exercise" data-service="physical">
+                    <div class="service-card-bg" style="--card-hue: 155;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 24h6l4-12 6 24 6-18 4 6h6" />
+                            <circle cx="24" cy="8" r="4" />
+                            <path d="M16 38h16" />
+                            <path d="M20 42h8" />
+                        </svg>
+                    </div>
+                    <h3>Physical Therapy</h3>
+                    <p>Comprehensive physical therapy programs designed to improve strength, flexibility, and overall
+                        physical function through evidence-based techniques.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="rehab" data-service="postsurgical">
+                    <div class="service-card-bg" style="--card-hue: 210;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="8" y="8" width="32" height="32" rx="4" />
+                            <path d="M24 16v16" />
+                            <path d="M16 24h16" />
+                            <circle cx="24" cy="24" r="10" stroke-dasharray="4 2" />
+                        </svg>
+                    </div>
+                    <h3>Post-Surgical Rehabilitation</h3>
+                    <p>Expert guided recovery programs after surgery to restore function, rebuild strength, and support
+                        safe return to daily activities.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="joint" data-service="shoulder">
+                    <div class="service-card-bg" style="--card-hue: 185;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="10" r="4" />
+                            <path d="M14 20c0 0 4 4 10 4s10-4 10-4" />
+                            <path d="M14 20v-6" />
+                            <path d="M34 20v-6" />
+                            <path d="M18 24v18" />
+                            <path d="M30 24v18" />
+                            <path d="M24 20v8" />
+                        </svg>
+                    </div>
+                    <h3>Shoulder Pain Treatment</h3>
+                    <p>Targeted shoulder rehabilitation to treat frozen shoulder, rotator cuff injuries, and chronic
+                        pain with personalized therapy plans.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="spine" data-service="spinal">
+                    <div class="service-card-bg" style="--card-hue: 205;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 4v40" />
+                            <path d="M16 8c0 4 3.5 8 8 8s8-4 8-8" />
+                            <path d="M14 20c0 4 4.5 8 10 8s10-4 10-8" />
+                            <path d="M16 32c0 4 3.5 8 8 8s8-4 8-8" />
+                            <circle cx="24" cy="4" r="2" fill="currentColor" />
+                            <circle cx="24" cy="44" r="2" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h3>Spinal Injuries Treatment</h3>
+                    <p>Advanced spinal injury rehabilitation to improve mobility, manage pain, and maximize recovery
+                        potential with specialized techniques.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="exercise" data-service="therapeutic">
+                    <div class="service-card-bg" style="--card-hue: 145;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="12" r="4" />
+                            <path d="M16 24c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+                            <path d="M12 32l6-6" />
+                            <path d="M36 32l-6-6" />
+                            <path d="M16 36l-4 8" />
+                            <path d="M32 36l4 8" />
+                            <path d="M20 28v12" />
+                            <path d="M28 28v12" />
+                        </svg>
+                    </div>
+                    <h3>Therapeutic Exercise Programs</h3>
+                    <p>Customized exercise programs designed to treat specific conditions, improve physical fitness, and
+                        promote long-term wellness and recovery.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" data-category="gentle" data-service="vestibular">
+                    <div class="service-card-bg" style="--card-hue: 260;"></div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="14" r="6" />
+                            <path d="M16 24c0 4 0 8 2 12" />
+                            <path d="M32 24c0 4 0 8-2 12" />
+                            <path d="M18 36c2 4 4 6 6 8" />
+                            <path d="M30 36c-2 4-4 6-6 8" />
+                            <path d="M8 20a4 4 0 0 1 8 0" />
+                            <path d="M32 20a4 4 0 0 1 8 0" />
+                            <path d="M12 20v6" />
+                            <path d="M36 20v6" />
+                        </svg>
+                    </div>
+                    <h3>Vestibular Rehabilitation Therapy</h3>
+                    <p>Specialized therapy for dizziness, vertigo, and balance disorders through targeted vestibular
+                        exercises and neuromuscular retraining.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-label animate-on-scroll">
+                <span class="label-line"></span>
+                <span>Why Choose Us</span>
+                <span class="label-line"></span>
+            </div>
+            <h2 class="section-title text-center animate-on-scroll">
+                Why Choose <span class="highlight">JPG Clinic and Physiotherapy</span>
+            </h2>
+            <p class="section-desc text-center animate-on-scroll">
+                We are committed to providing the highest standard of physiotherapy care with a focus on your complete
+                recovery.
+            </p>
+
+            <div class="why-grid">
+                <div class="why-card animate-on-scroll">
+                    <div class="why-num">01</div>
+                    <div class="why-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 4l5.5 11.2L42 17l-9 8.8L35 38l-11-5.8L13 38l2-12.2-9-8.8 12.5-1.8z" />
+                        </svg>
+                    </div>
+                    <h3>Experienced Physiotherapist</h3>
+                    <p>Dr. Satjeet Kumar brings extensive clinical experience and deep expertise in treating a wide
+                        range of conditions.</p>
+                </div>
+
+                <div class="why-card animate-on-scroll">
+                    <div class="why-num">02</div>
+                    <div class="why-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 4C13 4 4 13 4 24s9 20 20 20 20-9 20-20S35 4 24 4z" />
+                            <path d="M16 24l6 6 12-12" />
+                        </svg>
+                    </div>
+                    <h3>Personalized Treatment Approach</h3>
+                    <p>Every patient receives a customized treatment plan designed specifically for their condition,
+                        goals, and pace of recovery.</p>
+                </div>
+
+                <div class="why-card animate-on-scroll">
+                    <div class="why-num">03</div>
+                    <div class="why-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="14" width="36" height="24" rx="4" />
+                            <path d="M6 22h36" />
+                            <path d="M18 14V8h12v6" />
+                            <circle cx="24" cy="30" r="4" />
+                        </svg>
+                    </div>
+                    <h3>Advanced Physiotherapy Techniques</h3>
+                    <p>Modern, evidence-based treatment methods and advanced therapeutic equipment for optimal results.
+                    </p>
+                </div>
+
+                <div class="why-card animate-on-scroll">
+                    <div class="why-num">04</div>
+                    <div class="why-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 44c-12-8-18-16-18-24a10 10 0 0 1 18-6 10 10 0 0 1 18 6c0 8-6 16-18 24z" />
+                        </svg>
+                    </div>
+                    <h3>Focus on Long-Term Recovery</h3>
+                    <p>We don't just treat symptoms — we address root causes for lasting recovery and prevention of
+                        recurrence.</p>
+                </div>
+
+                <div class="why-card animate-on-scroll">
+                    <div class="why-num">05</div>
+                    <div class="why-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 40h40" />
+                            <path d="M8 40V20l8-8 8 8v20" />
+                            <path d="M24 40V24l8-6 8 6v16" />
+                            <rect x="12" y="24" width="4" height="4" />
+                            <rect x="12" y="32" width="4" height="4" />
+                            <rect x="28" y="28" width="4" height="4" />
+                            <rect x="28" y="34" width="4" height="4" />
+                        </svg>
+                    </div>
+                    <h3>Supportive Environment</h3>
+                    <p>A comfortable, clean, and welcoming clinic environment where patients feel relaxed and confident
+                        during treatment.</p>
+                </div>
+
+                <div class="why-card animate-on-scroll">
+                    <div class="why-num">06</div>
+                    <div class="why-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 4v16l12 8 12-8V4" />
+                            <path d="M12 4h24" />
+                            <path d="M24 28v16" />
+                            <path d="M16 44h16" />
+                            <path d="M20 16l4 4 8-8" />
+                        </svg>
+                    </div>
+                    <h3>Effective Pain Relief</h3>
+                    <p>Proven treatment strategies that deliver real, measurable pain relief and help patients return to
+                        active, fulfilling lives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-label animate-on-scroll">
+                <span class="label-line"></span>
+                <span>Contact Us</span>
+                <span class="label-line"></span>
+            </div>
+            <h2 class="section-title text-center animate-on-scroll">
+                Book Your <span class="highlight">Appointment</span> Today
+            </h2>
+            <p class="section-desc text-center animate-on-scroll">
+                Start your recovery journey with JPG Clinic and Physiotherapy. We're here to help you live pain-free.
+            </p>
+
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send us a Message</h3>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Describe your condition or query..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper animate-on-scroll">
+                    <div class="contact-info-card">
+                        <h3>Clinic Information</h3>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>JPG Clinic and Physiotherapy</strong>
+                                <p>Ajit Chowk, Dwarikapuri Road Number 7,<br>Chutia, Ranchi</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.83 19.83 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.83 19.83 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Phone Numbers</strong>
+                                <p>
+                                    <a href="tel:+919852717043" class="phone-link">+91 9852717043</a><br>
+                                    <a href="tel:+919031761438" class="phone-link">+91 9031761438</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Doctor</strong>
+                                <p>Dr. Satjeet Kumar<br>Professional Physiotherapist</p>
+                            </div>
+                        </div>
+
+                        <div class="call-buttons">
+                            <a href="tel:+919852717043" class="btn btn-call">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.83 19.83 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.83 19.83 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                                Call: 985 271 7043
+                            </a>
+                            <a href="tel:+919031761438" class="btn btn-call-alt">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.83 19.83 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.83 19.83 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                                Call: 903 176 1438
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Google Map -->
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.5!2d85.3498757!3d23.346452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e10023b44ceb%3A0x5d8df9cfff8395bf!2sJ.P.G%20CLINIC%20%26%20PHYSIOTHERAPY!5e0!3m2!1sen!2sin!4v1"
+                            width="100%" height="250" style="border:0; border-radius: 16px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="JPG Clinic and Physiotherapy Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="brand-icon">
+                            <img src="images/logo.svg" alt="JPG Clinic Logo" width="65" height="100">
+                        </div>
+                        <div>
+                            <span class="footer-name">JPG Clinic and Physiotherapy</span>
+                            <span class="footer-doc">Dr. Satjeet Kumar</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        Professional physiotherapy care dedicated to helping you recover from pain, injury,
+                        and mobility problems through personalized treatment plans and modern techniques.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About Doctor</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Back Pain Treatment</a></li>
+                        <li><a href="#services">Knee Pain Treatment</a></li>
+                        <li><a href="#services">Shoulder Pain Treatment</a></li>
+                        <li><a href="#services">Spinal Injuries</a></li>
+                        <li><a href="#services">Post-Surgical Rehab</a></li>
+                        <li><a href="#services">Physical Therapy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Ajit Chowk, Dwarikapuri Road Number 7,<br>Chutia, Ranchi</p>
+                    <p>
+                        <a href="tel:+919852717043">+91 9852717043</a><br>
+                        <a href="tel:+919031761438">+91 9031761438</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 JPG Clinic and Physiotherapy. All rights reserved.</p>
+                <p>Designed with care for better healthcare.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
