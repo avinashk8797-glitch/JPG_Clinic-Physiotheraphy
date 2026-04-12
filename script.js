@@ -223,35 +223,53 @@ function initContactForm() {
     const form = document.getElementById('contactForm');
     if (!form) return;
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault(); // Prevent default browser submission
 
-        // Get form data
-        const formData = new FormData(form);
-        const data = {};
-        formData.forEach((value, key) => {
-            data[key] = value;
-        });
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
 
-        // Validate
-        if (!data.name || !data.phone) {
-            shakeElement(form);
-            return;
+        // Show loading state
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Sending...";
+
+        try {
+            const formData = new FormData(form);
+
+            const response = await fetch(form.action, {
+                method: "POST",
+                body: formData
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                const wrapper = form.closest('.contact-form-wrapper');
+                wrapper.innerHTML = `
+                    <div class="form-success">
+                        <svg width="64" height="64" viewBox="0 0 24 24"
+                             fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <h3>Thank You!</h3>
+                        <p>Your message has been sent successfully. We will contact you shortly to confirm your appointment.</p>
+                        <p style="margin-top: 1rem; font-weight: 600; color: var(--primary);">
+                            — JPG Clinic and Physiotherapy
+                        </p>
+                    </div>
+                `;
+            } else {
+                alert("❌ Submission failed: " + result.message);
+            }
+        } catch (error) {
+            console.error("Form Submission Error:", error);
+            alert("⚠️ Something went wrong. Please try again.");
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
+            form.reset();
         }
-
-        // Show success state
-        const wrapper = form.closest('.contact-form-wrapper');
-        wrapper.innerHTML = `
-            <div class="form-success">
-                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                    <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <h3>Thank You!</h3>
-                <p>Your message has been sent successfully. We will contact you shortly to confirm your appointment.</p>
-                <p style="margin-top: 1rem; font-weight: 600; color: var(--primary);">— JPG Clinic and Physiotherapy</p>
-            </div>
-        `;
     });
 }
 
