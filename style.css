@@ -1363,8 +1363,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-logo .brand-icon {
-    width: 36px;
-    height: 36px;
+    width: 56px;
+    height: 56px;
+   
     color: var(--primary-light);
 }
 

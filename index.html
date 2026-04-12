@@ -14,7 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="images/logo.svg ">
+    <link rel="icon" type="image/svg+xml" href="images/Logo_01.svg ">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,7 +26,7 @@
             <a href="#hero" class="nav-brand">
                 <div style="display: flex; justify-content: center; align-items: center;">
   <div class="brand-icon">
-    <img src="images/logo.svg" alt="JPG Clinic Logo" width="40" height="40">
+    <img src="images/Logo_01.svg" alt="JPG Clinic Logo" width="40" height="40">
   </div>
 </div>
                 <div class="brand-text">
@@ -702,36 +702,58 @@
             <div class="contact-grid">
                 <!-- Contact Form -->
                 <div class="contact-form-wrapper animate-on-scroll">
-                    <form class="contact-form" id="contactForm">
-                        <h3>Send us a Message</h3>
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" placeholder="your@email.com">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" rows="4"
-                                placeholder="Describe your condition or query..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <line x1="22" y1="2" x2="11" y2="13" />
-                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                            </svg>
-                            Send Message
-                        </button>
-                    </form>
+<form class="contact-form" id="contactForm"
+      action="https://api.web3forms.com/submit"
+      method="POST">
+
+    <!-- 🔑 Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="1e89f0d4-3e48-41a0-9980-be1682eae5dd">
+
+    <!-- 📧 Email Configuration -->
+    <input type="hidden" name="subject" value="New Appointment Request - JPG Clinic">
+    <input type="hidden" name="from_name" value="JPG Clinic & Physiotherapy">
+    <input type="hidden" name="redirect"
+           value="https://jpg-clinic-physiotheraphy.vercel.app/thank-you.html">
+
+    <!-- 🛡️ Spam Protection -->
+    <input type="checkbox" name="botcheck" style="display: none;">
+
+    <h3>Send us a Message</h3>
+
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your full name" required>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="+91 XXXXX XXXXX" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                   placeholder="your@email.com" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="4"
+                  placeholder="Describe your condition or query..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-full">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13" />
+            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+        </svg>
+        Send Message
+    </button>
+</form>
                 </div>
 
                 <!-- Contact Info -->
@@ -822,7 +844,7 @@
                 <div class="footer-brand">
                     <div class="footer-logo">
                         <div class="brand-icon">
-                            <img src="images/logo.svg" alt="JPG Clinic Logo" width="65" height="100">
+                            <img src="images/Logo_01.svg" alt="JPG Clinic Logo" width="65" height="100">
                         </div>
                         <div>
                             <span class="footer-name">JPG Clinic & Physiotherapy</span>
